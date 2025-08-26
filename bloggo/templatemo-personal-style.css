@@ -656,7 +656,7 @@ https://templatemo.com/tm-593-personal-shape
         .about-image {
             width: 100%;
             height: 500px;
-            background: url('images/smiling-girl-computer-desktop.jpg') center/cover;
+            background: url('images/about-bubble.jpg') center/cover;
             border-radius: 30px;
             position: relative;
             overflow: hidden;
@@ -698,6 +698,121 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .about-text p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .skills {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .skill-tag {
+            padding: 0.75rem 1.5rem;
+            background: var(--bg-card);
+            color: var(--primary-color);
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: var(--text-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Posts */
+
+        .post {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+
+        .post::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
+        }
+
+        .post-content {
+            display: grid;
+
+            grid-template-columns: 1fr 1.5fr;
+            gap: 6rem;
+            align-items: center;
+            position: relative;
+        }
+
+        
+        .post-image1 {
+            width: 100%;
+            height: 100%;
+            background: url('images/galaga.png') center/contain no-repeat;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+
+        .post-image {
+            width: 100%;
+            height: 500px;
+            background: url('images/about-bubble.jpg') center/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+        .post-image:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .post-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(139, 92, 246, 0.2) 100%);
+            transition: opacity 0.3s ease;
+        }
+
+        .post-image:hover::before {
+            opacity: 0.7;
+        }
+
+        .post-image::after {
+
+        }
+
+        .post-text h3 {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .post-text p {
             font-size: 1.1rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
@@ -775,7 +890,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .portfolio-item:nth-child(1) .portfolio-image {
-            background-image: url('images/working-business-women.jpg');
+            background-image: url('images/internet-arcade.webp');
         }
 
         .portfolio-item:nth-child(2) .portfolio-image {
@@ -837,6 +952,18 @@ https://templatemo.com/tm-593-personal-shape
             flex-wrap: wrap;
         }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        
+        }
+
+        a .tech-tag {
+            text-decoration: none;
+            color: inherit;
+          }
+
+
         .tech-tag {
             padding: 0.4rem 1rem;
             background: var(--bg-secondary);
@@ -852,6 +979,7 @@ https://templatemo.com/tm-593-personal-shape
             color: var(--text-light);
         }
 
+      
         /* Contact Section */
         .contact {
             background: linear-gradient(135deg, #3b4cb8 0%, #4a2c65 50%, #9c35a8 100%);
@@ -1136,6 +1264,10 @@ https://templatemo.com/tm-593-personal-shape
                 grid-template-columns: 1fr;
                 gap: 4rem;
             }
+            .post-content {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
 
             .hero h1 {
                 font-size: 4rem;
@@ -1181,6 +1313,10 @@ https://templatemo.com/tm-593-personal-shape
             }
 
             .about-text h3 {
+                font-size: 2rem;
+            }
+
+            .post-text h3 {
                 font-size: 2rem;
             }
 
