@@ -759,7 +759,7 @@ https://templatemo.com/tm-593-personal-shape
         
         .post-image1 {
             width: 100%;
-            height: 100%;
+            height: 500px;
             background: url('images/galaga.png') center/contain no-repeat;
             border-radius: 30px;
             position: relative;
