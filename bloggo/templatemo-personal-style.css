@@ -627,6 +627,41 @@ https://templatemo.com/tm-593-personal-shape
             transform: translateX(-50%);
             border-radius: 2px;
         }
+        .section-title-p {
+            text-align: center;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 4rem;
+            background: var(--gradient-elegant);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+            position: relative;
+        }
+
+        .section-title-p::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-title-p h4 {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            text-align: center;
+            position: relative;
+
+        }
 
         /* About Section */
         .about {
@@ -756,11 +791,20 @@ https://templatemo.com/tm-593-personal-shape
             position: relative;
         }
 
+        .post-content1 {
+            display: grid;
+
+            grid-template-columns: 1fr 1.5fr;
+            gap: 6rem;
+            align-items: start;
+            position: relative;
+        }
+
         
         .post-image1 {
             width: 100%;
-            height: 500px;
-            background: url('images/galaga.png') center/contain no-repeat;
+            height: 700px;
+            background: url('images/galaga.png') center/cover;
             border-radius: 30px;
             position: relative;
             overflow: hidden;
@@ -768,7 +812,18 @@ https://templatemo.com/tm-593-personal-shape
             transform: rotate(-2deg);
             transition: transform 0.4s ease;
         }
-
+        .post-image2 {
+            width: 100%;
+            height: 500px;
+            background: url('images/secret-h-bp.png') top center/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+        }
+        
         .post-image {
             width: 100%;
             height: 500px;
@@ -818,6 +873,21 @@ https://templatemo.com/tm-593-personal-shape
             margin-bottom: 2rem;
             line-height: 1.8;
         }
+
+        .post-text li {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        .post-text h4 {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+   
 
         .skills {
             display: flex;
@@ -894,7 +964,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .portfolio-item:nth-child(2) .portfolio-image {
-            background-image: url('images/computer-desk-stickers.jpg');
+            background-image: url('images/secret-h-tc.webp');
         }
 
         .portfolio-item:nth-child(3) .portfolio-image {
@@ -975,6 +1045,20 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .tech-tag:hover {
+            background: var(--primary-color);
+            color: var(--text-light);
+        }
+        .tech-tag-p {
+            padding: 0.4rem 1rem;
+            background:  rgba(255, 255, 255, 0.95);
+            color: var(--text-secondary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .tech-tag-p:hover {
             background: var(--primary-color);
             color: var(--text-light);
         }
@@ -1248,7 +1332,18 @@ https://templatemo.com/tm-593-personal-shape
             transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        .slide-in-right1 {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
         .slide-in-right.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right1.animate {
             opacity: 1;
             transform: translateX(0);
         }
@@ -1265,6 +1360,10 @@ https://templatemo.com/tm-593-personal-shape
                 gap: 4rem;
             }
             .post-content {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+            .post-content2 {
                 grid-template-columns: 1fr;
                 gap: 4rem;
             }

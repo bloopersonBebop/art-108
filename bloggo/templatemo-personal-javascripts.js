@@ -61,6 +61,14 @@ https://templatemo.com/tm-593-personal-shape
             });
         }, observerOptions);
 
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".slide-in-right1").forEach(el => {
+              requestAnimationFrame(() => { // ensures browser paints hidden state first
+                el.classList.add("animate");
+              });
+            });
+          });
+
         // Staggered animation for portfolio items
         const portfolioObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
