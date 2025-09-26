@@ -767,6 +767,7 @@ https://templatemo.com/tm-593-personal-shape
 
         /* Posts */
 
+   
         .post {
             background: var(--bg-secondary);
             position: relative;
@@ -835,7 +836,7 @@ https://templatemo.com/tm-593-personal-shape
             transition: transform 0.4s ease;
             margin: 0 auto;
         }
-        .post-image4 {
+        .post-image3-2 {
             width: 100%;
             height: 500px;
             background: url('images/paper-proto-1.png') top center/cover;
@@ -847,6 +848,33 @@ https://templatemo.com/tm-593-personal-shape
             transition: transform 0.4s ease;
             margin: 0 auto;
         }
+        .post-image4 {
+            width: 100%;
+            height: 500px;
+            background: url('images/fai.png') top center/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+            margin: 0 auto;
+        }
+        .post-image4-2 {
+            width: 100%;
+            height: 500px;
+            background: url('images/fai.png') center/cover;
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform 0.4s ease;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+
+        
         
         .post-image {
             width: 100%;
@@ -996,7 +1024,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .portfolio-item:nth-child(4) .portfolio-image {
-            background-image: url('images/dashboard-interfaces-transparent-displays.jpg');
+            background-image: url('images/sylvie.png');
         }
 
         .portfolio-item:nth-child(5) .portfolio-image {
@@ -1479,3 +1507,5 @@ https://templatemo.com/tm-593-personal-shape
               align-items: flex-start; /* left align */
             }
           }
+
+ 
